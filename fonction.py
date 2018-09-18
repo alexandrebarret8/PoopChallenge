@@ -79,15 +79,15 @@ def deplacement_aleatoire_point_rouge(position_point_rouge_x, position_point_rou
 
 #fonction choix du caca
 def caca(nbr_alea):
-	#son=pygame.mixer.Sound("pet_chiasseux.wav")
+	#son=pygame.mixer.Sound("resources/sounds/pet_chiasseux.wav")
 	if nbr_alea==1:
 		#prout 1
-		son=pygame.mixer.Sound("pet_normal.wav")
+		son=pygame.mixer.Sound("resources/sounds/pet_normal.wav")
 		#prout 2
 	if nbr_alea==2:	
-		son=pygame.mixer.Sound("pet_chiasseux.wav")
+		son=pygame.mixer.Sound("resources/sounds/pet_chiasseux.wav")
 		#prout3
 	if nbr_alea==3:	
-		son=pygame.mixer.Sound("pet_immonde.wav")
+		son=pygame.mixer.Sound("resources/sounds/pet_immonde.wav")
 	return son
 

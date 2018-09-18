@@ -13,7 +13,7 @@ fenetre=pygame.display.set_mode((largeur_fenetre,hauteur_fenetre), RESIZABLE)
 
 #Charger un fond d'ecran dans la fenetre
 #Affichage du fond d'ecran
-fond = pygame.image.load("fond_r.png").convert()
+fond = pygame.image.load("resources/images/fond_r.png").convert()
 fenetre.blit(fond, (0,0))
 
 
@@ -22,8 +22,8 @@ taille_sprite=24
 position_point_bleu_x=taille_sprite
 position_point_bleu_y=taille_sprite
 
-point_bleu = pygame.image.load("perso_redim.png").convert_alpha()
-mur=pygame.image.load("carre-noir_redim.png").convert()
+point_bleu = pygame.image.load("resources/images/perso_redim.png").convert_alpha()
+mur=pygame.image.load("resources/images/carre-noir_redim.png").convert()
 
 #on ouvre le fichier text et on place dans une liste_maison chaque info sur le txt. 
 with open("n1.txt", "r") as fichier:
@@ -65,7 +65,7 @@ def afficher(fenetre):
     de la liste de structure renvoyee par generer()"""
     #Chargement des images (seule celle d'arrivee contient de la transparence)
 
-    mur = pygame.image.load("carre-noir_redim.png").convert()
+    mur = pygame.image.load("resources/images/carre-noir_redim.png").convert()
     #On parcourt la liste du niveau
     num_ligne = 0
 
@@ -86,7 +86,7 @@ def afficher(fenetre):
         num_ligne += 1    
 
 
-image_gagne = pygame.image.load("gagne.jpeg").convert()
+image_gagne = pygame.image.load("resources/images/gagne.jpeg").convert()
 
 #On enpile le fond sur la fenetre pour l'afficher
 #la fonction blit prend en argument 1) l'image a coller et 2) les coordonnees pour coller l'image
@@ -106,7 +106,7 @@ position_cercle_y=300
 #Affiche de perdu
 nb_victoire=0
 nb_defaite=0
-image_perdu=pygame.image.load("perdu.png").convert_alpha()
+image_perdu=pygame.image.load("resources/images/perdu.png").convert_alpha()
 
 #Creation de la jauge + fct de mise a jour de la jauge et de son affichage
 score=100
