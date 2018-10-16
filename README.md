@@ -22,3 +22,15 @@ python/bin/pip install -r requirements.txt
 ```bash
 python/bin/python mix.py
 ```
+
+## Start with pygame
+> It is better to use pygame with Python 3.6.X
+
+* Install pygame
+```bash
+python3 -m pip install -U pygame --user
+```
+* Test pygame
+```bash
+python3 -m pygame.examples.aliens
+```
