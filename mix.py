@@ -6,7 +6,7 @@ import fonction
 # Initialiser les modules de Pygame
 pygame.init()
 
-#OUvrir une fenetre
+#Ouvrir une fenetre
 hauteur_fenetre=800
 largeur_fenetre=1000
 fenetre=pygame.display.set_mode((largeur_fenetre,hauteur_fenetre), RESIZABLE)
